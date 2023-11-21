@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template1</title>
+
+    <style>
+        .menu{
+            display:block;
+            background-color: green;
+            height: 100px;
+            text-align: center;
+            font-family: verdana;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 60px 60px;
+            grid-template-rows: 100px 400px;
+            grid-template-areas: 
+            "header header header header header header"
+            "profile profile profile main main main"
+            ;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+
+        .header{
+            background-color: orange;
+            grid-area:header;
+            margin-top: 10px;
+            text-align: center;
+            font-family: verdana;
+
+        }
+        .profile{
+            background-color: red;
+            grid-area:profile;
+            text-align: center;
+            font-family: verdana;
+        }
+        .main{
+            background-color: aqua;
+            grid-area:main;
+            text-align: center;
+            font-family: verdana;
+        }
+        .footer{
+            display: block;
+            background-color: purple;
+            height: 100px;
+            margin-top:10px;
+            text-align: center;
+            font-family: verdana;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="menu">Menu Bar</div>
+
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="profile">Profile</div>
+        <div class="main">Main Body</div>
+    </div>
+
+    <div class="footer">Footer</div>
+
+
+</body>
+</html>
