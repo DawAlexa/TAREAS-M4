@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .menu{
+            display:block;
+            position:relative;
+            background-color: green;
+            height: 100px;
+        }
+        .s1{
+            position:absolute;
+            justify-content: center;
+        }
+        .container{
+            
+            position:relative;
+
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            align-content: flex-start;
+            height:380px;
+            background-color: aquamarine;
+            margin-top:10px;
+            margin-bottom:10px;
+            align-content: space-around;
+            border-color: black;
+            border-style:groove;
+        }
+        .uno{
+            background-color: red;
+            width: 1280px;
+            height: 150px;
+
+            flex-grow: 1;
+
+            margin-left:20px;
+            margin-right:20px;
+            justify-content: center;
+        }
+        .dos{
+            
+            background-color: orange;
+            flex-grow: 2;
+            width:640px;
+            height: 150px;
+            margin-left:20px;
+            margin-right:20px;
+           
+        
+        }
+        .tres{
+            background-color: blue;
+            flex-grow: 3;
+            width: 640px;
+            height:150px;
+            margin-left:20px;
+            margin-right:20px;
+        }
+        .footer{
+            
+            display:block;
+            background-color: yellow;
+            height: 100px;
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+
+    <div class="menu"><span class="s1">Navbar</span></div>
+
+    <div class="container">
+        <div class="uno"><span class="s2">Section</span></div>
+        <div class="dos"><span class="s3">Section</span></div>
+        <div class="tres"><span class="s4">Section</span></div>
+    </div>
+
+    <div class="footer"><span class="s5">Footer</span></div>
+
+
+
+</body>
+</html>
